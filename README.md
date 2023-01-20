@@ -1,6 +1,8 @@
 # The Modern JavaScript Tutorial
 
-My notes and work going through: https://javascript.info/.
+[![](https://img.shields.io/badge/portfolio-demo-green)](https://p2635.github.io/modern-js-tutorial/)
+
+My notes and work going through: https://javascript.info/, click the demo badge above to try stuff out.
 
 # PART 1
 
