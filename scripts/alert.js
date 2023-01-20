@@ -1,3 +1,5 @@
+'use strict'; // This enables new stuff, it can break old code.
+
 /* Multiple lines of comments here.
 Get ready to PARTAYYY.
 */
