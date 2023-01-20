@@ -42,3 +42,22 @@ const age;
 It depends if we are reusing the birthday variables for different people. If we are using it for different people, then both 'birthday' and age are better served as 'let' (camelCase as 'birthday' and 'age').
 
 If we are dealing with the same person then it makes sense for it to be named 'BIRTHDAY'. For age, it is not known prior to the code running. Therefore it makes sense to use camelCase in this instance.
+
+## Data types ([external link](https://javascript.info/types#tasks))
+
+**String quotes**
+
+What is the output of the script?
+
+```js
+let name = "Ilya";
+alert( `hello ${1}` ); // ?
+alert( `hello ${"name"}` ); // ?
+alert( `hello ${name}` ); // ?
+```
+
+My answers:
+
+1. An alert box comes up then shows 'hello 1'
+2. After closing alert box 1, an alert box comes up then shows 'hello name' (because "name" is a string)
+3. After closing alert box 2, an alert box comes up then shows 'hello Ilya'
