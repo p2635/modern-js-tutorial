@@ -84,9 +84,9 @@ function checkLogin(){
     
 }
 
-/* Check login (https://javascript.info/while-for#tasks)
+/* Use the `for` loop to output even numbers from 2 to 10
+(https://javascript.info/while-for#tasks)
 Date: 23 Jan 2023
-Use the `for` loop to output even numbers from 2 to 10.
 */
 function forLoop(){
     for(let i = 2; i < 11; i++){
