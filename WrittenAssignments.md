@@ -61,3 +61,87 @@ My answers:
 1. An alert box comes up then shows 'hello 1'
 2. After closing alert box 1, an alert box comes up then shows 'hello name' (because "name" is a string)
 3. After closing alert box 2, an alert box comes up then shows 'hello Ilya'
+
+##  Operators ([external link](https://javascript.info/operators#tasks))
+
+**The postfix and prefix forms**
+
+What are the final values of all variables a, b, c and d after the code below?
+
+```js
+let a = 1, b = 1;
+
+let c = ++a; // ?
+let d = b++; // ?
+```
+
+My answers:
+
+- Both a and b == 2 (both of them were incremented)
+- c = 2 (prefix form, we return the value after the operation)
+- d = 1 (postfix form, we return the value before the operation)
+
+**Assignment result**
+
+What are the values of a and x after the code below?
+
+```js
+let a = 2;
+let x = 1 + (a *= 2);
+```
+
+My answers: 
+
+* a == 4 because it was assigned during `a *= 2` which is the same as `a = a * 2`
+* x == 5 because the result of a(4) was added to 1.
+
+**Type conversions**
+
+> What are results of these expressions? Think well, write down and then compare with the answer.
+
+My answers are added as comments to keep this doc short.
+
+```js
+
+// String concatentation, left to right
+"" + 1 + 0 // "" becomes "1" then "10"
+"$" + 4 + 5 // "$" becomes "$4" then "$45"
+4 + 5 + "px" // "9px", 9 gets concatenated to "px"
+
+// Math - types are converted to numbers.
+
+// Strings
+6 / "3" // 2
+"2" * "3" // 6
+"4" - 2 // 2
+"  -9  " + 5 // -4, whitespace is removed
+"  -9  " - 5 // -14, whitespace is removed
+" \t \n" - 2 // -2, whitespace/tabs/newlines are removed
+
+"" - 1 + 0 // -1, no concat with a subtraction operator (only works with +)
+"4px" - 2 //  NaN, 'px' cannot be converted to a number for the operation
+
+// Boolean
+true + false // 1 + 0 = 1
+null + 1 // 0 + 1 = 1
+
+// undefined
+undefined + 1 // NaN, can't convert to a number
+```
+
+This is the only one I got wrong: `"  -9  " + 5 // -4, whitespace is removed`. I forgot that strings get concatenated with +, so the right answer is `"  -9  5"`.
+
+**Fix the addition**
+
+> Here’s a code that asks the user for two numbers and shows their sum. It works incorrectly. The output in the example below is 12 (for default prompt values). Why? Fix it. The result should be 3.
+>
+> ```js
+> let a = prompt("First number?", 1);
+> let b = prompt("Second number?", 2);
+> 
+> alert(a + b); // 12
+> ```
+
+My answers:
+* This is a question about type conversion, it's '12' because of string concatenation.
+* To fix this, we can use the unary+ and rewrite the 4th line to `alert(+a + +b);`
