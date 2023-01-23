@@ -56,3 +56,30 @@ function showTheSign(){
     
     alert(result);
 }
+
+/* Check login (https://javascript.info/logical-operators#check-the-login)
+Date: 23 Jan 2023
+*/
+function checkLogin(){
+
+    let user = prompt("Who's there?");
+
+    if(user === null || user == ''){
+        alert("Cancelled.")
+    } else if (user == 'Admin'){
+
+        let pass = prompt("Please enter password.");
+        
+        if(pass === null || pass == ''){
+            alert("Cancelled.")
+        } else if(pass == "TheMaster"){
+            alert("Welcome!")
+        } else {
+            alert("Wrong password.")
+        }
+
+    } else {
+        alert("I don't know you.");
+    }
+    
+}

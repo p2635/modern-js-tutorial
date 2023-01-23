@@ -239,3 +239,145 @@ let message = (login == 'Employee') ? 'Hello' :
     (login == '') ? 'No login' :
     ''
 ```
+
+# Logical operators
+
+**What's the result of OR?**
+
+> What is the code below going to output?
+> `alert( null || 2 || undefined );`
+
+My answer:
+
+1. null returns false so it moves on to the next value.
+2. The next value is 2 which is truthy, this gets alerted.
+3. undefined is skipped (short-circuit evaluation).
+
+**What's the result of OR'ed alerts?**
+
+> What will the code below output?
+> `alert( alert(1) || 2 || alert(3) );`
+
+My answer:
+
+1. `alert()` returns `None(undefined)` according to MDN web docs.
+2. `alert(1)` will be `false` following my first point.
+3. `2` is the next value and it's truthy, this gets alerted.
+4. `alert(3)` is skipped (short-circuit evaluation).
+
+What I missed: There is a step that happens after step 2, `alert(1)` still shows an alert even though it returns as false.
+
+**What is the result of AND?**
+
+> What is this code going to show?
+> `alert( 1 && null && 2 );`
+
+My answer:
+
+1. && attempts to find the first falsy value.
+2. 1 is truthy, the evaluation continues to the next one.
+3. null is falsy so the alert will show 'null'.
+
+**What is the result of AND'd alerts?**
+
+> What is this code going to show?
+> `alert( alert(1) && alert(2) );`
+
+My answer:
+
+1. && attempts to find the first falsy value.
+2. `alert(1)` runs and shows '1' in an alert box.
+3. `alert(1)` evaluates to false, because it returns `None(undefined)` according to MDN web docs.
+4. Point 3 applies, this means the alert will finally show 'undefined' as the message.
+5. `alert(2)` is skipped (short-circuit evaluation). 
+
+**What is the result of OR AND OR?**
+
+> What will the result be?
+> `alert( null || 2 && 3 || 4 );`
+
+My answer:
+
+1. AND is highest precedence so (2 && 3) goes first.
+2. (2 && 3) evaluates to true because 2 and 3 are positive numbers. 3 is returned since it's the last value between the two.
+3. null is falsy so 3 is the first truthy value found by the OR operation.
+4. An alert box is displayed with '3'.
+
+**Check the range between**
+
+> Write an if condition to check that age is between 14 and 90 inclusively.
+> 
+> “Inclusively” means that age can reach the edges 14 or 90.
+
+```js
+if(age >= 14 && age <= 90){
+    // do something
+}
+```
+
+**Check the range outside**
+
+> Write an if condition to check that age is NOT between 14 and 90 inclusively.
+> 
+> Create two variants: the first one using NOT !, the second one – without it.
+
+```js
+let age; // Assign age somewhere down the line
+
+// Variant 1
+if(!(age >= 14 && age <= 90)){
+    // do something
+}
+
+// Variant 2
+if(age < 14 && age > 90){
+    // do something
+}
+```
+
+I almost got variant 2 correct but I should've used the OR like this `age < 14 || age > 90`. In our current reality, it's impossible to have a number satisfy both conditions.
+
+**A question about "if"**
+
+> Which of these alerts are going to execute?
+> 
+> What will the results of the expressions be inside if(...)?
+> ```js
+> if (-1 || 0) alert( 'first' );
+> if (-1 && 0) alert( 'second' );
+> if (null || -1 && 1) alert( 'third' );
+> ```
+
+Expression 1 will run:
+
+* The 'if' part is `-1 || 0 = -1`
+* -1 is truthy and this is returned.
+* A box appears with the message 'first'.
+
+Expression 2 will not run:
+
+* The 'if' part is `-1 && 0 = 0`
+* 0 is falsy and this is returned.
+
+Expression 3 will run:
+
+* The 'if' part is `-1 && 1 = 1` then `null || 1 = 1`.
+* 1 is truthy and this is returned.
+* A box appears with the message 'third'.
+
+**Check the login**
+
+> Write the code which asks for a login with `prompt`.
+>
+> If the visitor enters "Admin", then prompt for a password, if the input is an empty line or Esc – show “Canceled”, if it’s another string – then show “I don’t know you”.
+>
+> The password is checked as follows:
+>
+> * If it equals “TheMaster”, then show “Welcome!”,
+> * Another string – show “Wrong password”,
+> * For an empty string or cancelled input, show “Canceled”
+
+The schema:
+
+![](https://javascript.info/task/check-login/ifelse_task.svg)
+
