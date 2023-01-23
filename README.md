@@ -10,7 +10,7 @@ This repo documents my work on https://javascript.info/.
 
 # PART 1
 
-- [x] An introduction: js intro, manuals and specs, code editors, dev console (20/01/2023)
+- [x] An introduction: js intro, manuals and specs, code editors, dev console
 - [ ] JavaScript Fundamentals: `<script>` tag, `alert()`, semicolon, comments, BigInt, Infinity, prompt, confirm
 
 # PART 2
