@@ -381,3 +381,66 @@ The schema:
 
 ![](https://javascript.info/task/check-login/ifelse_task.svg)
 
+# Loops: while and for
+
+**Last loop value**
+
+> What is the last value alerted by this code? Why?
+> ```js
+> let i = 3;
+>
+> while (i) {
+>   alert( i-- );
+> }
+
+My answer: The last value alerted by this code is 1. The while loop ends when i becomes 0 (falsy).
+
+**Which values does the while loop show?**
+
+> For every loop iteration, write down which value it outputs and then compare it with the solution.
+> 
+> Both loops alert the same values, or not?
+>
+> ```js
+> // The prefix form ++i:
+> let i = 0;
+> while (++i < 5) alert( i );
+>
+> // The postfix form i++
+> let i = 0;
+> while (i++ < 5) alert( i );
+> ```
+
+prefix form (recap: returns the value after the operation):
+
+* i increments to 1 so the expression evaluates `(1 < 5)`. 1 gets alerted.
+* This repeats until i gets incremented to 5 (`5 < 5` terminates the loop).
+* The output is 1, 2, 3, 4.
+
+postfix form (recap: returns the value before the operation).
+
+* i increments to 1 but the expression still evaluates `(0 < 5)` since it's postfix.
+* 1 gets alerted because it's separate to the comparison statement.
+* This repeats until `i = 5` where `5 < 5` terminates the loop.
+* The output is 1, 2, 3, 4, 5. The postfix form gets one more loop than prefix.
+* Both loops do not alert the same values based on my other points.
+
+**Which values get shown by the "for" loop?**
+
+> For each loop write down which values it is going to show. Then compare with the answer.
+>
+> Both loops alert same values or not?
+>
+> ```js
+> // The postfix form:
+> for (let i = 0; i < 5; i++) alert( i );
+> 
+> // The prefix form:
+> for (let i = 0; i < 5; ++i) alert( i );
+> ```
+
+My answer (WRONG): I expect the answer to be the same as the previous question. The only difference is that this uses the for loop format.
+
+Correction: I failed to spot that the comparison statement is separate from the step. `i < 5` stands on its own for both loops, so they both output the same numbers.
+
+
