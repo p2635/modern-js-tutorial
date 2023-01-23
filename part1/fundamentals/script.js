@@ -94,3 +94,21 @@ function forLoop(){
         alert(i);
     }
 }
+
+/* Rewrite 'for' loop to a 'while' loop without changing behaviour
+(https://javascript.info/while-for#tasks)
+Date: 23 Jan 2023
+*/
+function forToWhile(){
+
+    /* Original Code:
+    for (let i = 0; i < 3; i++) {
+    alert( `number ${i}!` );
+    }
+    */
+    let i = 0;
+    while(i < 3){
+        alert(`number ${i}!`);
+        i++;
+    }
+}
