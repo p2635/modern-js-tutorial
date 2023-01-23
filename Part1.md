@@ -463,3 +463,5 @@ Correction: I failed to spot that the comparison statement is separate from the 
 > The loop must ask for a number until either the visitor enters a number greater than 100 or cancels the input/enters an empty line.
 > 
 > Here we can assume that the visitor only inputs numbers. There’s no need to implement a special handling for a non-numeric input in this task.
+
+I compared my answer to the solution on the website. My solution used 'while' and not 'do while' because the task did not instruct me to. My next task is to try to implement a do while without looking at the solution (let's give it a day so I forget what the solution looks like.)
