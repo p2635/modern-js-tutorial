@@ -90,7 +90,7 @@ Use the `for` loop to output even numbers from 2 to 10.
 */
 function forLoop(){
     for(let i = 2; i < 11; i++){
-        if (i % 2) continue;
+        if (i % 2) continue; // If it's odd, skip an iteration.
         alert(i);
     }
 }
