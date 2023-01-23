@@ -467,3 +467,17 @@ Correction: I failed to spot that the comparison statement is separate from the 
 I compared my answer `repeatUntilCorrect1()` to the solution on the website. My solution used 'while' and not 'do while' because the task did not instruct me to.
 
 After a few hours, I implemented a do-while loop with `repeatUntilCorrect2()`  without looking at the solution. The solutions are similar but instead of doing `<= 100`, I did `< 101`.
+
+**Output prime numbers**
+
+> An integer number greater than 1 is called a prime if it cannot be divided without a remainder by anything except 1 and itself.
+> 
+> In other words, `n > 1` is a prime if it can’t be evenly divided by anything except 1 and n.
+> 
+> For example, 5 is a prime, because it cannot be divided without a remainder by 2, 3 and 4.
+> 
+> Write the code which outputs prime numbers in the interval from 2 to n.
+> 
+> For `n = 10` the result will be 2,3,5,7.
+> 
+> P.S. The code should work for any n, not be hard-tuned for any fixed value.
