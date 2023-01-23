@@ -28,3 +28,17 @@ function askForName(){
 
     alert(`You confirmed that your name is ${name}.`);
 }
+
+/* If else (https://javascript.info/ifelse#the-name-of-javascript)
+Date: 23 Jan 2023
+*/
+function ifElse(){
+
+    let answer = prompt("What is the “official” name of JavaScript?");
+    if(answer == "ECMAScript"){
+        alert("Right!");
+    } else {
+        alert("You don’t know? ECMAScript!");
+    }
+
+}

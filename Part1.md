@@ -95,7 +95,7 @@ My answers:
 * a == 4 because it was assigned during `a *= 2` which is the same as `a = a * 2`
 * x == 5 because the result of a(4) was added to 1.
 
-**Type conversions**
+# Type conversions
 
 > What are results of these expressions? Think well, write down and then compare with the answer.
 
@@ -147,7 +147,7 @@ My answers:
 * This is a question about type conversion, it's '12' because of string concatenation.
 * To fix this, we can use the unary+ and rewrite the 4th line to `alert(+a + +b);`
 
-**Comparisons**
+# Comparisons
 
 > What will be the result for these expressions?
 
@@ -164,3 +164,26 @@ null === +"\n0\n" // false, strict equality check
 ```
 
 I got one wrong: `"2" > "12" // false (same as 2 > 12)`. The answer is true because it's string comparison.
+
+# Conditional branching: if, '?'
+
+**if (a string with zero)**
+
+> Will alert be shown?
+>
+> ```js 
+> if ("0") {
+>  alert( 'Hello' );
+> }
+> ```
+
+An alert with "Hello' will be shown, "0" will evaluate to true since it is not an empty string.
+
+**The name of JavaScript**
+
+![](https://raw.githubusercontent.com/javascript-tutorial/en.javascript.info/ea7738bb7c3616bb51ff14ae3db2a2747d7888ff/1-js/02-first-steps/10-ifelse/2-check-standard/ifelse_task2.svg)
+
+> Using the if..else construct, write the code which asks: ‘What is the “official” name of JavaScript?’. If the visitor enters “ECMAScript”, then output “Right!”, otherwise – output: “You don’t know? ECMAScript!”
+
+See my code implemented here.
+
