@@ -443,4 +443,6 @@ My answer (WRONG): I expect the answer to be the same as the previous question. 
 
 Correction: I failed to spot that the comparison statement is separate from the step. `i < 5` stands on its own for both loops, so they both output the same numbers.
 
+**Output even numbers in the loop**
 
+> Use the `for` loop to output even numbers from 2 to 10.
