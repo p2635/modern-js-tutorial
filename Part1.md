@@ -185,7 +185,7 @@ An alert with "Hello' will be shown, "0" will evaluate to true since it is not a
 
 > Using the if..else construct, write the code which asks: ‘What is the “official” name of JavaScript?’. If the visitor enters “ECMAScript”, then output “Right!”, otherwise – output: “You don’t know? ECMAScript!”
 
-**Show the sign** [(see my code)](https://github.com/p2635/modern-js-tutorial/blob/443fd059d6086927bddf3636a2122f66eab8987c/part1/fundamentals/script.js#L45)
+**Show the sign** [(see my code)](https://github.com/p2635/modern-js-tutorial/blob/638303a7701da88a18ce373e00370443790aef2b/part1/fundamentals/script.js#L45)
 
 > Using if..else, write the code which gets a number via prompt and then shows in alert:
 >
