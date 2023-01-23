@@ -30,7 +30,7 @@ This repo documents my work while reading and working through https://javascript
 - [x] Type Conversions
 - [x] Basic operators, maths
 - [x] Comparisons
-- [ ] Conditional branching: if, '?'
+- [x] Conditional branching: if, '?'
 - [ ] Logical operators
 - [ ] Nullish coalescing operator '??'
 - [ ] Loops: while and for
