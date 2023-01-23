@@ -1,4 +1,4 @@
-# Written assignments
+# Part 1 - Written Assignments
 
 ## Variables ([external link](https://javascript.info/variables#tasks))
 
