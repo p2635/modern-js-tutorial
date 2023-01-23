@@ -2,7 +2,7 @@
 
 [![](https://img.shields.io/badge/portfolio-demo-green)](https://p2635.github.io/modern-js-tutorial/)
 
-This repo documents my work on https://javascript.info/.
+This repo documents my work while reading and working through https://javascript.info/.
 
 - The demo badge is a html page that I created to test out my scripts, feel free to try it out.
 - Refer to WrittenAssignments.md for non-executable tasks. For example, 'Guess the output' questions.
