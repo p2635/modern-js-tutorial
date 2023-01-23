@@ -179,11 +179,20 @@ I got one wrong: `"2" > "12" // false (same as 2 > 12)`. The answer is true beca
 
 An alert with "Hello' will be shown, "0" will evaluate to true since it is not an empty string.
 
-**The name of JavaScript**
+**The name of JavaScript** [(see my code)](https://github.com/p2635/modern-js-tutorial/blob/443fd059d6086927bddf3636a2122f66eab8987c/part1/fundamentals/script.js#L32)
 
 ![](https://raw.githubusercontent.com/javascript-tutorial/en.javascript.info/ea7738bb7c3616bb51ff14ae3db2a2747d7888ff/1-js/02-first-steps/10-ifelse/2-check-standard/ifelse_task2.svg)
 
 > Using the if..else construct, write the code which asks: ‘What is the “official” name of JavaScript?’. If the visitor enters “ECMAScript”, then output “Right!”, otherwise – output: “You don’t know? ECMAScript!”
 
-[See my code.](https://github.com/p2635/modern-js-tutorial/blob/443fd059d6086927bddf3636a2122f66eab8987c/part1/fundamentals/script.js#L32)
+**Show the sign**
 
+> Using if..else, write the code which gets a number via prompt and then shows in alert:
+>
+>* 1, if the value is greater than zero,
+>* -1, if less than zero,
+>* 0, if equals zero.
+>
+> In this task we assume that the input is always a number.
+
+ 

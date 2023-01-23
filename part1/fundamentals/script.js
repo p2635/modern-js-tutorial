@@ -29,7 +29,7 @@ function askForName(){
     alert(`You confirmed that your name is ${name}.`);
 }
 
-/* If else (https://javascript.info/ifelse#the-name-of-javascript)
+/* If else (https://javascript.info/ifelse)
 Date: 23 Jan 2023
 */
 function ifElse(){
@@ -40,5 +40,19 @@ function ifElse(){
     } else {
         alert("You don’t know? ECMAScript!");
     }
+}
 
+/* Show the sign (https://javascript.info/ifelse)
+Date: 23 Jan 2023
+*/
+function showTheSign(){
+
+    let answer = prompt("Enter any number.");
+    
+    let result = (answer > 0) ? '1' :
+        (answer < 0) ? '-1' :
+        (answer == 0) ? '0' :
+        'Something went wrong.';
+    
+    alert(result);
 }
