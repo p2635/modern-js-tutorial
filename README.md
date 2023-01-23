@@ -7,7 +7,7 @@ My notes and work going through: https://javascript.info/, click the demo badge 
 # PART 1
 
 - [x] An introduction: js intro, manuals and specs, code editors, dev console (20/01/2023)
-- [ ] JavaScript Fundamentals: `<script>` tag, `alert()`, semicolon, comments, BigInt, Infinity
+- [ ] JavaScript Fundamentals: `<script>` tag, `alert()`, semicolon, comments, BigInt, Infinity, prompt, confirm
 
 # PART 2
 
