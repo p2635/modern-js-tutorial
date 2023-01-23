@@ -365,7 +365,7 @@ Expression 3 will run:
 * 1 is truthy and this is returned.
 * A box appears with the message 'third'.
 
-**Check the login**
+**Check the login** [(see my code)](https://github.com/p2635/modern-js-tutorial/blob/dbd9b3d7a978bb2c81f6439a0e5bfd86cf786051/part1/fundamentals/script.js#L60)
 
 > Write the code which asks for a login with `prompt`.
 >
