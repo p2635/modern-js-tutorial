@@ -114,11 +114,12 @@ function forToWhile(){
 }
 
 /* Repeat until the input is correct
-My solution did not use 'do while' because the task did not instruct me to.
 (https://javascript.info/while-for#tasks)
 Date: 23 Jan 2023
 */
-function repeatUntilCorrect(){
+
+// My solution did not use 'do while' because the task did not instruct me to.
+function repeatUntilCorrec1(){
 
     let answer = 0;
     while(answer < 101){
@@ -126,4 +127,13 @@ function repeatUntilCorrect(){
         if((answer == null) || (answer == '')) break;
     }
 
+}
+
+// My attempt with a do-while loop
+function repeatUntilCorrect2(){
+
+    let answer;
+    do{
+        answer = prompt("Please enter a number greater than 100. I won't ask you again!")
+    } while (answer < 101 && answer)
 }
