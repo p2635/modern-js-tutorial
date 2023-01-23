@@ -137,3 +137,30 @@ function repeatUntilCorrect2(){
         answer = prompt("Please enter a number greater than 100. I won't ask you again!")
     } while (answer < 101 && answer)
 }
+
+/* Output prime numbers
+(https://javascript.info/while-for#tasks)
+Date: 23 Jan 2023
+*/
+
+function primeNumbers(){
+
+    const n = 10;
+    let primeNumbers = `From 2 to ${n}, the prime numbers are `;
+    
+    counter:
+    for(let i = 2; i <= n; i++){
+    
+      checkPrime:
+      for(let j = 2; j < i; j++){
+    
+        // No remainder, no prime. Skip to the next number.
+        if(i % j == 0) continue counter;
+      }
+    
+      // If it's a prime then add it to the list.
+      primeNumbers += `${i}, `
+    }
+    
+    alert(primeNumbers);    
+}

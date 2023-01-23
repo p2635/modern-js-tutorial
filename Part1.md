@@ -468,7 +468,7 @@ I compared my answer `repeatUntilCorrect1()` to the solution on the website. My 
 
 After a few hours, I implemented a do-while loop with `repeatUntilCorrect2()`  without looking at the solution. The solutions are similar but instead of doing `<= 100`, I did `< 101`.
 
-**Output prime numbers**
+**Output prime numbers** [(see my code)]()
 
 > An integer number greater than 1 is called a prime if it cannot be divided without a remainder by anything except 1 and itself.
 > 
