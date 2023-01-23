@@ -443,11 +443,11 @@ My answer (WRONG): I expect the answer to be the same as the previous question. 
 
 Correction: I failed to spot that the comparison statement is separate from the step. `i < 5` stands on its own for both loops, so they both output the same numbers.
 
-**Output even numbers in the loop** [(see my code)]()
+**Output even numbers in the loop** [(see my code)](https://github.com/p2635/modern-js-tutorial/blob/616cf2411e299a5c3b3b8a61674e8745c250c7d0/part1/fundamentals/script.js#L87)
 
 > Use the `for` loop to output even numbers from 2 to 10.
 
-**Replace "for" with "while"** [(see my code)]()
+**Replace "for" with "while"** [(see my code)](https://github.com/p2635/modern-js-tutorial/blob/616cf2411e299a5c3b3b8a61674e8745c250c7d0/part1/fundamentals/script.js#L98)
 
 > Rewrite the code changing the for loop to while without altering its behavior (the output should stay same).
 >
@@ -456,7 +456,7 @@ Correction: I failed to spot that the comparison statement is separate from the 
 >  alert( `number ${i}!` );
 > }
 
-**Repeat until the input is correct** [(see my code)]()
+**Repeat until the input is correct** [(see my code)](https://github.com/p2635/modern-js-tutorial/blob/616cf2411e299a5c3b3b8a61674e8745c250c7d0/part1/fundamentals/script.js#L132)
 
 > Write a loop which prompts for a number greater than 100. If the visitor enters another number – ask them to input again.
 >
@@ -468,7 +468,7 @@ I compared my answer `repeatUntilCorrect1()` to the solution on the website. My 
 
 After a few hours, I implemented a do-while loop with `repeatUntilCorrect2()`  without looking at the solution. The solutions are similar but instead of doing `<= 100`, I did `< 101`.
 
-**Output prime numbers** [(see my code)]()
+**Output prime numbers** [(see my code)](https://github.com/p2635/modern-js-tutorial/blob/616cf2411e299a5c3b3b8a61674e8745c250c7d0/part1/fundamentals/script.js#L141)
 
 > An integer number greater than 1 is called a prime if it cannot be divided without a remainder by anything except 1 and itself.
 > 
