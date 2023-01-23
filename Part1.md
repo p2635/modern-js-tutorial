@@ -464,4 +464,6 @@ Correction: I failed to spot that the comparison statement is separate from the 
 > 
 > Here we can assume that the visitor only inputs numbers. There’s no need to implement a special handling for a non-numeric input in this task.
 
-I compared my answer to the solution on the website. My solution used 'while' and not 'do while' because the task did not instruct me to. My next task is to try to implement a do while without looking at the solution (let's give it a day so I forget what the solution looks like.)
+I compared my answer `repeatUntilCorrect1()` to the solution on the website. My solution used 'while' and not 'do while' because the task did not instruct me to.
+
+After a few hours, I implemented a do-while loop with `repeatUntilCorrect2()`  without looking at the solution. The solutions are similar but instead of doing `<= 100`, I did `< 101`.
