@@ -1,3 +1,5 @@
+[![](https://javascript.info/img/sitetoolbar__logo_en.svg)](https://javascript.info/)
+
 # The Modern JavaScript Tutorial
 
 [![](https://img.shields.io/badge/portfolio-demo-green)](https://p2635.github.io/modern-js-tutorial/)
