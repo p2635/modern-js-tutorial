@@ -195,4 +195,47 @@ An alert with "Hello' will be shown, "0" will evaluate to true since it is not a
 >
 > In this task we assume that the input is always a number.
 
- 
+**Rewrite 'if' into '?'**
+
+> Rewrite this if using the conditional operator '?':
+> ```js
+> let result;
+>
+> if (a + b < 4) {
+>   result = 'Below';
+> } else {
+>   result = 'Over';
+> }
+
+My answer:
+
+```js
+let result = (a + b < 4) ? 'Below' : 'Over';
+```
+
+**Rewrite 'if..else' into '?'**
+
+> Rewrite if..else using multiple ternary operators '?'. For readability, it’s recommended to split the code into multiple lines.
+>
+> ```js
+> let message;
+>
+> if (login == 'Employee') {
+>   message = 'Hello';
+> } else if (login == 'Director') {
+>   message = 'Greetings';
+> } else if (login == '') {
+>   message = 'No login';
+> } else {
+>   message = '';
+> }
+> ```
+
+My answer:
+
+```js
+let message = (login == 'Employee') ? 'Hello' :
+    (login == 'Director') ? 'Greetings' :
+    (login == '') ? 'No login' :
+    ''
+```
