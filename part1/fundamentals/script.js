@@ -1,10 +1,19 @@
-/* Prompt (https://javascript.info/alert-prompt-confirm#tasks)
-Date: 23 Jan 2023
+/* Script file for modern js practice
 Author: Philip Wong
 */
 
-'use strict'; // This enables new stuff, it can break old code.
+'use strict'; // This enables new stuff, it could break old code.
 
+/* Alert (https://javascript.info/hello-world)
+Date: 20 Jan 2023
+*/
+function showAlert(){
+    alert( 'I\'m JavaScript!' );
+}
+
+/* Prompt (https://javascript.info/alert-prompt-confirm)
+Date: 23 Jan 2023
+*/
 function askForName(){
 
     let name;
@@ -18,5 +27,4 @@ function askForName(){
     }
 
     alert(`You confirmed that your name is ${name}.`);
-
 }
