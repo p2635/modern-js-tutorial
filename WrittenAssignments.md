@@ -99,7 +99,7 @@ My answers:
 
 > What are results of these expressions? Think well, write down and then compare with the answer.
 
-My answers are added as comments to keep this doc short.
+My answers are added as comments in the code.
 
 ```js
 
@@ -129,7 +129,7 @@ null + 1 // 0 + 1 = 1
 undefined + 1 // NaN, can't convert to a number
 ```
 
-This is the only one I got wrong: `"  -9  " + 5 // -4, whitespace is removed`. I forgot that strings get concatenated with +, so the right answer is `"  -9  5"`.
+I got one wrong: `"  -9  " + 5 // -4, whitespace is removed`. I forgot that strings get concatenated with +, so the right answer is `"  -9  5"`.
 
 **Fix the addition**
 
@@ -143,5 +143,24 @@ This is the only one I got wrong: `"  -9  " + 5 // -4, whitespace is removed`. I
 > ```
 
 My answers:
+
 * This is a question about type conversion, it's '12' because of string concatenation.
 * To fix this, we can use the unary+ and rewrite the 4th line to `alert(+a + +b);`
+
+**Comparisons**
+
+> What will be the result for these expressions?
+
+My answers are added as comments in the code.
+
+```js
+5 > 4 // true
+"apple" > "pineapple" // false since 'p' is greater than 'a'
+"2" > "12" // false (same as 2 > 12)
+undefined == null // true, special 'sweet-couple' rule
+undefined === null // false, strict equality check
+null == "\n0\n" // false, == for null/undefined does not come with type conversion
+null === +"\n0\n" // false, strict equality check
+```
+
+I got one wrong: `"2" > "12" // false (same as 2 > 12)`. The answer is true because it's string comparison.
