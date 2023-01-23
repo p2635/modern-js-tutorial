@@ -31,7 +31,7 @@ This repo documents my work while reading and working through https://javascript
 - [x] Basic operators, maths
 - [x] Comparisons
 - [x] Conditional branching: if, '?'
-- [ ] Logical operators
+- [x] Logical operators
 - [ ] Nullish coalescing operator '??'
 - [ ] Loops: while and for
 - [ ] The "switch" statement
