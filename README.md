@@ -33,7 +33,7 @@ This repo documents my work while reading and working through https://javascript
 - [x] Conditional branching: if, '?'
 - [x] Logical operators
 - [x] Nullish coalescing operator '??'
-- [ ] Loops: while and for
+- [x] Loops: while and for
 - [ ] The "switch" statement
 - [ ] Functions
 - [ ] Function expressions
