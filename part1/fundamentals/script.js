@@ -169,10 +169,6 @@ function primeNumbers(){
 (https://javascript.info/function-basics#is-else-required)
 Date: 23 Jan 2023
 */
-function isNatural(num){
-    return num >= 1;   
-}
-
 function pow(x, n){
     let result = x;
     for(let i = 1; i < n; i++){
@@ -188,11 +184,14 @@ function powTask(){
     + " the result.");
     let number = prompt('Please enter a value for x.');
     let exponent;
+    let isNatural = function(number){
+         return number >= 1;
+    };
 
     while(isNatural(exponent) == false){
         exponent = prompt('Please enter a value for n.' +
             ' Only natural values of n are supported (integers' +
-            '  up from 1). Otherwise, I will keep asking you.');
+            ' up from 1). Otherwise, I will keep asking you.');
     }
 
     if(isNatural(exponent)){
