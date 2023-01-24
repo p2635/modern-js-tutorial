@@ -175,6 +175,7 @@ TBC.
 2. Multi-cursor (CMD + Option + Up/Down): https://code.visualstudio.com/docs/editor/codebasics#_multiple-selections-multicursor
 3. A parameter is the term used 'declare time'. An argument is the term used 'call time' (the value passed).
 4. Beginner style guide cheatsheet: https://javascript.info/coding-style
+5. Quote from comments lesson: "An important sign of a good developer is comments: their presence and even their absence."
 
 # Log
 
