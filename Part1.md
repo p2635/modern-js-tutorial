@@ -538,3 +538,50 @@ if (browser === 'Edge'){
     alert( 'We hope that this page looks ok!' );
 }
 ```
+
+**Rewrite the "switch" into an "if"**
+
+> Rewrite the code below using a single switch statement:
+> 
+> ```js
+> let a = +prompt('a?', '');
+> 
+> if (a == 0) {
+>   alert( 0 );
+> }
+> if (a == 1) {
+>   alert( 1 );
+> }
+> 
+> if (a == 2 || a == 3) {
+>   alert( '2,3' );
+> }
+> ```
+
+My answer:
+
+```js
+let a = prompt('a?');
+
+switch (+a) {
+    
+    case 0:
+        alert(0);
+        break;
+
+    case 1:
+        alert(1);
+        break;
+
+    case 2:
+    case 3:
+        alert('2,3');
+        break;
+
+    default:
+        // nothing happens here
+}
+
+```
+
+
