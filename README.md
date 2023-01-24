@@ -57,7 +57,7 @@ This course documents my work for the open source course '[The Modern JavaScript
 **Code quality**
 
 - [x] Debugging in the browser
-- [ ] Coding Style
+- [x] Coding Style
 - [ ] Comments
 - [ ] Ninja code
 - [ ] Automated testing with Mocha
@@ -173,7 +173,8 @@ TBC.
 
 1. Learned to omit generated TOC headings from Markdown: https://markdown-all-in-one.github.io/docs/guide/table-of-contents.html#hiding-headings-from-toc
 2. Multi-cursor (CMD + Option + Up/Down): https://code.visualstudio.com/docs/editor/codebasics#_multiple-selections-multicursor
-3. Beginner style guide cheatsheet: https://javascript.info/coding-style
+3. A parameter is the term used 'declare time'. An argument is the term used 'call time' (the value passed).
+4. Beginner style guide cheatsheet: https://javascript.info/coding-style
 
 # Log
 
