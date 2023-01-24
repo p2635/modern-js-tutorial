@@ -184,9 +184,14 @@ function powTask(){
     + " the result.");
     let number = prompt('Please enter a value for x.');
     let exponent;
+
+    let isNatural = (number) => number >= 1;
+    /* This arrow function is a shorter form of:
+
     let isNatural = function(number){
          return number >= 1;
     };
+    */
 
     while(isNatural(exponent) == false){
         exponent = prompt('Please enter a value for n.' +
