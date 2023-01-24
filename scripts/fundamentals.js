@@ -51,8 +51,8 @@ function showTheSign(){
     
     let result = (answer > 0) ? '1' :
         (answer < 0) ? '-1' :
-        (answer == 0) ? '0' :
-        'Something went wrong.';
+            (answer == 0) ? '0' :
+                'Something went wrong.';
     
     alert(result);
 }
@@ -151,15 +151,15 @@ function primeNumbers(){
     counter:
     for(let i = 2; i <= n; i++){
     
-      checkPrime:
-      for(let j = 2; j < i; j++){
+        checkPrime:
+        for(let j = 2; j < i; j++){
     
-        // No remainder, no prime. Skip to the next number.
-        if(i % j == 0) continue counter;
-      }
+            // No remainder, no prime. Skip to the next number.
+            if(i % j == 0) continue counter;
+        }
     
-      // If it's a prime then add it to the list.
-      primeNumbers += `${i}, `
+        // If it's a prime then add it to the list.
+        primeNumbers += `${i}, `
     }
     
     alert(primeNumbers);    
@@ -172,7 +172,7 @@ Date: 24 Jan 2023
 function pow(x, n){
     let result = x;
     for(let i = 1; i < n; i++){
-      result *= x;
+        result *= x;
     }
     return result;
 }
