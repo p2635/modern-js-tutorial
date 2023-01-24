@@ -11,6 +11,10 @@ This course documents my work for the open source course '[The Modern JavaScript
 - The `scripts` folder contains the JavaScript code that I wrote throughout the course.
 - The `tasks` folder contains my written assignments. For example, 'Guess the output' questions.
 - If later tasks shows my competency in earlier tasks, I generally left out earlier tasks from this repo to keep things simple. There's no point showing what I can do twice.
+- Minimum estimated effort required: 174 hours
+  - A unit is what I call part of a chapter (1.1... 1.3).
+  - There are 174 units (based on getting a count of the element `list-sub__title`).
+  - It takes me at least one hour per unit.
 
 **Contents**
 
