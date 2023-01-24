@@ -59,7 +59,7 @@ This course documents my work for the open source course '[The Modern JavaScript
 - [x] Debugging in the browser
 - [x] Coding Style
 - [x] Comments
-- [ ] Ninja code
+- [x] Ninja code <-- funniest "lesson" so far.
 - [ ] Automated testing with Mocha
 - [ ] Polyfills and transpilers
 
