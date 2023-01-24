@@ -1,5 +1,5 @@
 <!-- omit in toc -->
-# Part 1 - Written Assignments
+# Fundamentals - Written Assignments
 
 - [Variables](#variables)
 - [Data types](#data-types)
