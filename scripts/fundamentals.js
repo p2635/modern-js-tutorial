@@ -151,7 +151,7 @@ function primeNumbers(){
     counter:
     for(let i = 2; i <= n; i++){
     
-        checkPrime:
+        // Check if it's a prime number
         for(let j = 2; j < i; j++){
     
             // No remainder, no prime. Skip to the next number.
