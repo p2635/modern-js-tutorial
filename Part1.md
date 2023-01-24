@@ -1,5 +1,16 @@
 # Part 1 - Written Assignments
 
+- [Part 1 - Written Assignments](#part-1---written-assignments)
+  - [Variables (external link)](#variables-external-link)
+  - [Data types (external link)](#data-types-external-link)
+  - [Operators (external link)](#operators-external-link)
+- [Type conversions](#type-conversions)
+- [Comparisons](#comparisons)
+- [Conditional branching: if, '?'](#conditional-branching-if-)
+- [Logical operators](#logical-operators)
+- [Loops: while and for](#loops-while-and-for)
+- [The 'switch' statement](#the-switch-statement)
+
 ## Variables ([external link](https://javascript.info/variables#tasks))
 
 **Task 2 - Giving the right name**
@@ -481,3 +492,6 @@ After a few hours, I implemented a do-while loop with `repeatUntilCorrect2()`  w
 > For `n = 10` the result will be 2,3,5,7.
 > 
 > P.S. The code should work for any n, not be hard-tuned for any fixed value.
+
+# The 'switch' statement
+
