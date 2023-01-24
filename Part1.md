@@ -11,6 +11,7 @@
 - [Loops: while and for](#loops-while-and-for)
 - [The 'switch' statement](#the-switch-statement)
 - [Functions](#functions)
+- [Arrow functions](#arrow-functions)
 
 # Variables
 
@@ -682,3 +683,22 @@ function min (a, b){
 > Create a web-page that prompts for x and n, and then shows the result of pow(x,n).
 > 
 > P.S. In this task the function should support only natural values of n: integers up from 1.
+
+# Arrow functions
+
+**Rewrite with arrow functions**
+
+> Replace Function Expressions with arrow functions in the code below:
+> 
+> ```js
+> function ask(question, yes, no) {
+>   if (confirm(question)) yes();
+>   else no();
+> }
+> 
+> ask(
+>   "Do you agree?",
+>   function() { alert("You agreed."); },
+>   function() { alert("You canceled the execution."); }
+> );
+> ```
