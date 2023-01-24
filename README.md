@@ -166,3 +166,4 @@ TBC.
 # Misc lessons learned
 
 1. Learned to omit generated TOC headings from Markdown: https://markdown-all-in-one.github.io/docs/guide/table-of-contents.html#hiding-headings-from-toc
+2. Multi-cursor (CMD + Option + Up/Down) : https://code.visualstudio.com/docs/editor/codebasics#_multiple-selections-multicursor
