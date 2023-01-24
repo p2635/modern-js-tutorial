@@ -16,6 +16,7 @@ This course documents my work for the open source course '[The Modern JavaScript
 - [PART 1](#part-1)
 - [PART 2](#part-2)
 - [PART 3](#part-3)
+- [Misc lessons learned](#misc-lessons-learned)
 
 # PART 1
 
@@ -161,3 +162,7 @@ TBC.
 # PART 3
 
 TBC.
+
+# Misc lessons learned
+
+1. Learned to omit generated TOC headings from Markdown: https://markdown-all-in-one.github.io/docs/guide/table-of-contents.html#hiding-headings-from-toc
