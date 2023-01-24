@@ -64,7 +64,7 @@ Here we learn JavaScript, starting from scratch and go on to advanced concepts l
 - [x] Comments
 - [x] Ninja code <-- funniest "lesson" so far.
 - [x] Automated testing with Mocha
-- [ ] Polyfills and transpilers
+- [x] Polyfills and transpilers
 
 **Objects: the basics**
 
