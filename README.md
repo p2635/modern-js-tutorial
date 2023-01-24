@@ -55,7 +55,7 @@ This course documents my work for the open source course '[The Modern JavaScript
 
 **Code quality**
 
-- [ ] Debugging in the browser
+- [x] Debugging in the browser
 - [ ] Coding Style
 - [ ] Comments
 - [ ] Ninja code
