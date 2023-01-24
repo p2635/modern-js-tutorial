@@ -176,4 +176,5 @@ TBC.
 3. Beginner style guide cheatsheet: https://javascript.info/coding-style
 
 # Log
+
 - (24/01/2023) I have completed 22 units over 4 days since I started. This is me fully focusing 7 hours a day on it, so that is about 7 (hours) x 4 (days) = 28 hours. I can roughly estimate 1 hour per unit as my average pace. There are 64 units left for me to do on Part 1, that means it will take me about 64 hours (64 / 7 = ~9 days).
