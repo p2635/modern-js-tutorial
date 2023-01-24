@@ -167,7 +167,7 @@ function primeNumbers(){
 
 /* Function pow(x,n)
 (https://javascript.info/function-basics#is-else-required)
-Date: 23 Jan 2023
+Date: 24 Jan 2023
 */
 function pow(x, n){
     let result = x;
@@ -207,3 +207,24 @@ function powTask(){
     }
 }
 
+/* Arrow functions
+(https://javascript.info/arrow-functions-basics)
+Date: 24 Jan 2023
+*/
+function arrowFunction(){
+
+    let ask = (question, yes, no) => confirm(question) ? yes() : no();
+
+    /* Alternatively, after looking at the braces for body answer.
+    function ask(question, yes, no) {
+    if (confirm(question)) yes();
+    else no();
+    }
+    */
+
+    ask(
+        "Do you agree?",
+        () => alert("You agreed."),
+        () => alert ("You canceled the execution.")
+    );
+}

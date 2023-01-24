@@ -45,7 +45,7 @@ This course documents my work for the open source course '[The Modern JavaScript
 - [x] The "switch" statement
 - [x] Functions
 - [x] Function expressions
-- [ ] Arrow functions, the basics
+- [x] Arrow functions, the basics
 - [ ] JavaScript specials
 
 **Code quality**
