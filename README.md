@@ -18,13 +18,15 @@ This course documents my work for the open source course '[The Modern JavaScript
 
 **Contents**
 
-- [Part 1](#part-1)
-- [Part 2](#part-2)
-- [Part 3](#part-3)
-- [Misc lessons learned](#misc-lessons-learned)
-- [Log](#log)
+- [Part 1: The JavaScript language](#part-1-the-javascript-language)
+- [Part 2: Browser: Document, Events, Interfaces](#part-2-browser-document-events-interfaces)
+- [Part 3: Additional articles](#part-3-additional-articles)
+- [My Lessons Learned](#my-lessons-learned)
+- [Learning Log](#learning-log)
 
-# Part 1
+# Part 1: The JavaScript language
+
+Here we learn JavaScript, starting from scratch and go on to advanced concepts like OOP. We concentrate on the language itself here, with the minimum of environment-specific notes.
 
 **An introduction**
 
@@ -161,15 +163,19 @@ This course documents my work for the open source course '[The Modern JavaScript
 - [ ] BigInt
 - [ ] Unicode, String internals
 
-# Part 2
+# Part 2: Browser: Document, Events, Interfaces
+
+Learning how to manage the browser page: add elements, manipulate their size and position, dynamically create interfaces and interact with the visitor.
 
 TBC.
 
-# Part 3
+# Part 3: Additional articles
+
+List of extra topics that assume you've covered the first two parts of tutorial. There is no clear hierarchy here, you can read articles in the order you want.
 
 TBC.
 
-# Misc lessons learned
+# My Lessons Learned
 
 1. Learned to omit generated TOC headings from Markdown: https://markdown-all-in-one.github.io/docs/guide/table-of-contents.html#hiding-headings-from-toc
 2. Multi-cursor (CMD + Option + Up/Down): https://code.visualstudio.com/docs/editor/codebasics#_multiple-selections-multicursor
@@ -178,6 +184,6 @@ TBC.
 5. Learn the ways of the ninja so you don't have to be one.
 6. Quote from comments lesson: "An important sign of a good developer is comments: their presence and even their absence."
 
-# Log
+# Learning Log
 
 - (24/01/2023) I have completed 22 units over 4 days since I started. This is me fully focusing 7 hours a day on it, so that is about 7 (hours) x 4 (days) = 28 hours. I can roughly estimate 1 hour per unit as my average pace. There are 64 units left for me to do on Part 1, that means it will take me about 64 hours (64 / 7 = ~9 days).
