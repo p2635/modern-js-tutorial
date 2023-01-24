@@ -22,6 +22,7 @@ This course documents my work for the open source course '[The Modern JavaScript
 - [Part 2](#part-2)
 - [Part 3](#part-3)
 - [Misc lessons learned](#misc-lessons-learned)
+- [Log](#log)
 
 # Part 1
 
@@ -171,5 +172,8 @@ TBC.
 # Misc lessons learned
 
 1. Learned to omit generated TOC headings from Markdown: https://markdown-all-in-one.github.io/docs/guide/table-of-contents.html#hiding-headings-from-toc
-2. Multi-cursor (CMD + Option + Up/Down) : https://code.visualstudio.com/docs/editor/codebasics#_multiple-selections-multicursor
-3. (24/01/2023) I have completed 22 units over 4 days since I started. This is me fully focusing 7 hours a day on it, so that is about 7 (hours) x 4 (days) = 28 hours. I can roughly estimate 1 hour per unit as my average pace. There are 64 units left for me to do on Part 1, that means it will take me about 64 hours (64 / 7 = ~9 days).
+2. Multi-cursor (CMD + Option + Up/Down): https://code.visualstudio.com/docs/editor/codebasics#_multiple-selections-multicursor
+3. Beginner style guide cheatsheet: https://javascript.info/coding-style
+
+# Log
+- (24/01/2023) I have completed 22 units over 4 days since I started. This is me fully focusing 7 hours a day on it, so that is about 7 (hours) x 4 (days) = 28 hours. I can roughly estimate 1 hour per unit as my average pace. There are 64 units left for me to do on Part 1, that means it will take me about 64 hours (64 / 7 = ~9 days).
