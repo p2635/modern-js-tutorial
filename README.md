@@ -46,7 +46,7 @@ This course documents my work for the open source course '[The Modern JavaScript
 - [x] Functions
 - [x] Function expressions
 - [x] Arrow functions, the basics
-- [ ] JavaScript specials
+- [x] JavaScript specials
 
 **Code quality**
 
