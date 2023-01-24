@@ -1,9 +1,9 @@
 <!-- omit in toc -->
 # Part 1 - Written Assignments
 
-- [Variables (external link)](#variables-external-link)
-- [Data types (external link)](#data-types-external-link)
-- [Operators (external link)](#operators-external-link)
+- [Variables](#variables)
+- [Data types](#data-types)
+- [Operators](#operators)
 - [Type conversions](#type-conversions)
 - [Comparisons](#comparisons)
 - [Conditional branching: if, '?'](#conditional-branching-if-)
@@ -11,7 +11,9 @@
 - [Loops: while and for](#loops-while-and-for)
 - [The 'switch' statement](#the-switch-statement)
 
-# Variables ([external link](https://javascript.info/variables#tasks))
+# Variables
+
+External Link: https://javascript.info/variables#tasks
 
 **Task 2 - Giving the right name**
 
@@ -54,7 +56,9 @@ It depends if we are reusing the birthday variables for different people. If we 
 
 If we are dealing with the same person then it makes sense for it to be named 'BIRTHDAY'. For age, it is not known prior to the code running. Therefore it makes sense to use camelCase in this instance.
 
-# Data types ([external link](https://javascript.info/types#tasks))
+# Data types
+
+External Link: https://javascript.info/types#tasks
 
 **String quotes**
 
@@ -73,7 +77,9 @@ My answers:
 2. After closing alert box 1, an alert box comes up then shows 'hello name' (because "name" is a string)
 3. After closing alert box 2, an alert box comes up then shows 'hello Ilya'
 
-#  Operators ([external link](https://javascript.info/operators#tasks))
+#  Operators
+
+External Link: https://javascript.info/operators#tasks
 
 **The postfix and prefix forms**
 
