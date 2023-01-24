@@ -1,5 +1,6 @@
 [![](https://javascript.info/img/sitetoolbar__logo_en.svg)](https://javascript.info/)
 
+<!-- omit in toc -->
 # The Modern JavaScript Tutorial
 
 [![](https://img.shields.io/badge/portfolio-demo-green)](https://p2635.github.io/modern-js-tutorial/)
@@ -9,6 +10,12 @@ This course documents my work for the open source course '[The Modern JavaScript
 - The demo badge is a html page that I created to test out my scripts, feel free to try it out.
 - `Part1.md` - my written assignments. For example, 'Guess the output' questions.
 - There's no point showing what I can do twice. If later tasks shows my competency in earlier tasks, I generally left out earlier tasks from this repo to keep things simple.
+
+**Contents**
+
+- [PART 1](#part-1)
+- [PART 2](#part-2)
+- [PART 3](#part-3)
 
 # PART 1
 
