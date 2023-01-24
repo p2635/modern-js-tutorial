@@ -13,12 +13,12 @@ This course documents my work for the open source course '[The Modern JavaScript
 
 **Contents**
 
-- [PART 1](#part-1)
-- [PART 2](#part-2)
-- [PART 3](#part-3)
+- [Part 1](#part-1)
+- [Part 2](#part-2)
+- [Part 3](#part-3)
 - [Misc lessons learned](#misc-lessons-learned)
 
-# PART 1
+# Part 1
 
 **An introduction**
 
@@ -155,11 +155,11 @@ This course documents my work for the open source course '[The Modern JavaScript
 - [ ] BigInt
 - [ ] Unicode, String internals
 
-# PART 2
+# Part 2
 
 TBC.
 
-# PART 3
+# Part 3
 
 TBC.
 
