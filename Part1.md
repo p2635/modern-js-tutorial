@@ -10,6 +10,7 @@
 - [Logical operators](#logical-operators)
 - [Loops: while and for](#loops-while-and-for)
 - [The 'switch' statement](#the-switch-statement)
+- [Functions](#functions)
 
 # Variables
 
@@ -584,4 +585,100 @@ switch (+a) {
 
 ```
 
+# Functions
 
+**Is "else" required?**
+
+> The following function returns true if the parameter age is greater than 18.
+> 
+> Otherwise it asks for a confirmation and returns its result:
+> ```js
+> function checkAge(age) {
+>   if (age > 18) {
+>     return true;
+>   } else {
+>     // ...
+>     return confirm('Did parents allow you?');
+>   }
+> }
+> ```
+> Will the function work differently if else is removed?
+> ```js
+> function checkAge(age) {
+>   if (age > 18) {
+>     return true;
+>   }
+>   // ...
+>   return confirm('Did parents allow you?');
+> }
+> ```
+> Is there any difference in the behavior of these two variants?
+
+My answer: I think it works the same, the `return` keyword terminates the function in either case. The function shows `confirm` as long as `if` evaluates to false, whether you have an `else` clause or not. I still prefer the first function because it's easier to read.
+
+**Rewrite the function using '?' or '||'**
+
+> The following function returns true if the parameter age is greater than 18.
+> 
+> Otherwise it asks for a confirmation and returns its result.
+> ```js
+> function checkAge(age) {
+>   if (age > 18) {
+>     return true;
+>   } else {
+>     return confirm('Did parents allow you?');
+>   }
+> }
+> ```
+> Rewrite it, to perform the same, but without if, in a single line.
+> 
+> Make two variants of checkAge:
+> 
+> * Using a question mark operator ?
+> * Using OR ||
+> 
+
+```js
+// Variant 1
+function checkAge(age) {
+    return (age > 18) ? true : confirm('Did parents allow you?');
+}
+
+// Variant 2
+function checkAge(age) {
+    return (age > 18) || confirm('Did parents allow you?');
+}
+```
+
+**Function min(a, b)**
+
+> Write a function min(a,b) which returns the least of two numbers a and b.
+> 
+> For instance:
+> 
+> ```js
+> min(2, 5) == 2
+> min(3, -1) == -1
+> min(1, 1) == 1
+> ```
+
+My answer:
+
+```js
+function min (a, b){
+    return (a < b) ? a : b;    
+}
+```
+
+**Function pow(x,n)**
+
+> Write a function pow(x,n) that returns x in power n. Or, in other words, multiplies x by itself n times and returns the result.
+> 
+> ```js
+> pow(3, 2) = 3 * 3 = 9
+> pow(3, 3) = 3 * 3 * 3 = 27
+> pow(1, 100) = 1 * 1 * ...* 1 = 1
+> ```
+> Create a web-page that prompts for x and n, and then shows the result of pow(x,n).
+> 
+> P.S. In this task the function should support only natural values of n: integers up from 1.

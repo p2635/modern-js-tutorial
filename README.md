@@ -43,7 +43,7 @@ This course documents my work for the open source course '[The Modern JavaScript
 - [x] Nullish coalescing operator '??'
 - [x] Loops: while and for
 - [x] The "switch" statement
-- [ ] Functions
+- [x] Functions
 - [ ] Function expressions
 - [ ] Arrow functions, the basics
 - [ ] JavaScript specials

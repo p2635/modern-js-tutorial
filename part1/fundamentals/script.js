@@ -164,3 +164,42 @@ function primeNumbers(){
     
     alert(primeNumbers);    
 }
+
+/* Function pow(x,n)
+(https://javascript.info/function-basics#is-else-required)
+Date: 23 Jan 2023
+*/
+function isNatural(num){
+    return num >= 1;   
+}
+
+function pow(x, n){
+    let result = x;
+    for(let i = 1; i < n; i++){
+      result *= x;
+    }
+    return result;
+}
+
+function powTask(){
+
+    alert("This function pow(x,n) returns x in power"
+    + " n. Or, in other words, multiplies x by itself n times and returns"
+    + " the result.");
+    let number = prompt('Please enter a value for x.');
+    let exponent;
+
+    while(isNatural(exponent) == false){
+        exponent = prompt('Please enter a value for n.' +
+            ' Only natural values of n are supported (integers' +
+            '  up from 1). Otherwise, I will keep asking you.');
+    }
+
+    if(isNatural(exponent)){
+        alert(`The calculated value of ${number} ^ ${exponent} is`
+            + ` ${pow(number, exponent)}.`);
+    } else {
+        alert("Something went wrong, you must've entered an invalid number.");
+    }
+}
+
