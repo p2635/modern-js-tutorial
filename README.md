@@ -4,7 +4,7 @@
 
 [![](https://img.shields.io/badge/portfolio-demo-green)](https://p2635.github.io/modern-js-tutorial/)
 
-This repo documents my work while reading and working through https://javascript.info/.
+This course documents my work for the open source course '[The Modern JavaScript Tutorial](https://javascript.info/)' created by Ilya Kantor.
 
 - The demo badge is a html page that I created to test out my scripts, feel free to try it out.
 - Refer to `Part1.md` for written assignments. For example, 'Guess the output' questions.
