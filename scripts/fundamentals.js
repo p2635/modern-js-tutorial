@@ -1,4 +1,4 @@
-/* Script file for modern js practice
+/* Script file for modern js practice (JavaScript Fundamentals)
 Author: Philip Wong
 */
 
