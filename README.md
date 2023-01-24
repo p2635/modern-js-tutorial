@@ -8,8 +8,9 @@
 This course documents my work for the open source course '[The Modern JavaScript Tutorial](https://javascript.info/)' created by Ilya Kantor.
 
 - The demo badge is a html page that I created to test out my scripts, feel free to try it out.
-- `Fundamentals.md`... - my written assignments. For example, 'Guess the output' questions.
-- There's no point showing what I can do twice. If later tasks shows my competency in earlier tasks, I generally left out earlier tasks from this repo to keep things simple.
+- The `scripts` folder contains the JavaScript code that I wrote throughout the course.
+- The `tasks` folder contains my written assignments. For example, 'Guess the output' questions.
+- If later tasks shows my competency in earlier tasks, I generally left out earlier tasks from this repo to keep things simple. There's no point showing what I can do twice.
 
 **Contents**
 
