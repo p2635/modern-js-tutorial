@@ -16,7 +16,8 @@ This course documents my work for the open source course '[The Modern JavaScript
   - There are 174 units (based on getting a count of the element `list-sub__title`).
   - It takes me at least one hour per unit.
 
-**Contents**
+<!-- omit in toc -->
+# Contents
 
 - [Part 1: The JavaScript language](#part-1-the-javascript-language)
 - [Part 2: Browser: Document, Events, Interfaces](#part-2-browser-document-events-interfaces)
