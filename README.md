@@ -44,7 +44,7 @@ This course documents my work for the open source course '[The Modern JavaScript
 - [x] Loops: while and for
 - [x] The "switch" statement
 - [x] Functions
-- [ ] Function expressions
+- [x] Function expressions
 - [ ] Arrow functions, the basics
 - [ ] JavaScript specials
 
