@@ -67,7 +67,7 @@ Here we learn JavaScript, starting from scratch and go on to advanced concepts l
 **Objects: the basics**
 
 - [x] Objects
-- [ ] Object references and copying
+- [x] Object references and copying
 - [ ] Garbage collection
 - [ ] Object methods, "this"
 - [ ] Constructor, operator "new"
