@@ -1,7 +1,6 @@
 [![](https://javascript.info/img/sitetoolbar__logo_en.svg)](https://javascript.info/)
 
-<!-- omit in toc -->
-# The Modern JavaScript Tutorial
+<h1>The Modern JavaScript Tutorial</h1>
 
 [![](https://img.shields.io/badge/portfolio-demo-green)](https://p2635.github.io/modern-js-tutorial/)
 
@@ -16,8 +15,7 @@ This course documents my work for the open source course '[The Modern JavaScript
   - There are 174 units (based on getting a count of the element `list-sub__title`).
   - The assumption is it takes me at least one hour per unit.
 
-<!-- omit in toc -->
-# Contents
+<h1>Contents</h1>
 
 - [Part 1: The JavaScript language](#part-1-the-javascript-language)
 - [Part 2: Browser: Document, Events, Interfaces](#part-2-browser-document-events-interfaces)
