@@ -138,3 +138,49 @@ function multiplyNumeric(obj) {
   }
 }
 ```
+
+**Using "this" in object literal**
+
+> Here the function makeUser returns an object.
+>
+> What is the result of accessing its ref? Why?
+>
+> ```js
+> function makeUser() {
+>   return {
+>     name: "John",
+>     ref: this,
+>   };
+> }
+>
+> let user = makeUser();
+>
+> alert(user.ref.name); // What's the result?
+> ```
+
+My answer (wrong): `this` is processed during call-time, so I think the result is the same as `user.name` (which is "John"). It's circular logic.
+
+Lessons learned: The result is not what I thought, the alert actually shows `undefined`. This is because `this` is unbound. I was right about being processed during call-time, but I did not seem to understand this concept fully. This is what was actually going on:
+
+1. When the user variable is declared, `makeUser()` is called and returns an object.
+2. That object includes two properties, name (with string of "John") and ref (with the JS keyword `this`).
+3. At that point in time, `this` is `undefined` because **the function is not invoked as a method of an object**. `this` only can refer to the name if it was declared as a method like `ref()` (and therefore `user.ref().name`).
+4. This behaviour applies only when the JS script is running in strict mode.
+
+**Create a calculator**
+
+> Create an object `calculator` with three methods:
+>
+> - `read()` prompts for two values and saves them as object properties with names a and b respectively.
+> - `sum()` returns the sum of saved values.
+> - `mul()` multiplies saved values and returns the result.
+>
+> ```js
+> let calculator = {
+>   // ... your code ...
+> };
+>
+> calculator.read();
+> alert(calculator.sum());
+> alert(calculator.mul());
+> ```
