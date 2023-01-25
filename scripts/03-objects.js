@@ -23,3 +23,25 @@ let calculator = {
 };
 
 // The answer gives the code 'this.a = +prompt('a?', 0);'
+
+/* Chain commands Task (https://javascript.info/object-methods#tasks)
+Date: 25 Jan 2023
+*/
+let ladder = {
+  step: 0,
+  up() {
+    this.step++;
+    return this;
+  },
+  down() {
+    this.step--;
+    return this;
+  },
+  showStep() {
+    alert(this.step);
+    return this;
+  },
+};
+
+// I failed to work out the answer, so I had to read the solution.
+// It appears the object is returned everytime, which allows methods to be chained.

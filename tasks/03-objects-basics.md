@@ -223,3 +223,5 @@ See code in `03-objects.js`.
 > ladder.up().up().down().showStep().down().showStep(); // shows 1 then 0
 >
 > Such approach is widely used across JavaScript libraries.
+
+See code in `03-objects.js`.
