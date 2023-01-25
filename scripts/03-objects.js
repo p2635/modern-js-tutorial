@@ -26,6 +26,9 @@ let calculator = {
 
 /* Chain commands Task (https://javascript.info/object-methods#tasks)
 Date: 25 Jan 2023
+I failed to work out the answer, so I had to read the solution.
+It appears the object is returned everytime, which allows methods
+to be chained.
 */
 let ladder = {
   step: 0,
@@ -43,9 +46,6 @@ let ladder = {
   },
 };
 
-/* I failed to work out the answer, so I had to read the solution.
-It appears the object is returned everytime, which allows methods to be chained. */
-
 /* Create new Calculator (https://javascript.info/constructor-new#create-new-calculator)
 Date: 25 Jan 2023
 */
@@ -59,5 +59,17 @@ function Calculator() {
   };
   this.mul = function () {
     return this.a * this.b;
+  };
+}
+
+/* Create new Accumulator
+https://javascript.info/constructor-new
+Full marks!
+Date: 25 Jan 2023
+*/
+function Accumulator(startingValue) {
+  this.value = startingValue;
+  this.read = function () {
+    this.value += +prompt("Enter value to add");
   };
 }
