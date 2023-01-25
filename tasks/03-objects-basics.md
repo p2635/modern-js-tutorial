@@ -184,3 +184,5 @@ Lessons learned: The result is not what I thought, the alert actually shows `und
 > alert(calculator.sum());
 > alert(calculator.mul());
 > ```
+
+See code in `03-objects.js`.

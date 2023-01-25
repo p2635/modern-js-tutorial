@@ -1,6 +1,8 @@
 <!-- omit in toc -->
+
 # Fundamentals - Written Assignments
 
+- [Fundamentals - Written Assignments](#fundamentals---written-assignments)
 - [Variables](#variables)
 - [Data types](#data-types)
 - [Operators](#operators)
@@ -25,7 +27,7 @@ Create a variable to store the name of a current visitor to a website. How would
 My answer:
 
 ```js
-let myPlanetName = 'Earth';
+let myPlanetName = "Earth";
 let currentUser = "John";
 ```
 
@@ -34,7 +36,7 @@ let currentUser = "John";
 Examine the following code:
 
 ```js
-const birthday = '18.04.1982';
+const birthday = "18.04.1982";
 const age = someCode(birthday);
 ```
 
@@ -43,7 +45,7 @@ Here we have a constant birthday for the date, and also the age constant. The ag
 Would it be right to use upper case for birthday? For age? Or even for both?
 
 ```js
-const BIRTHDAY = '18.04.1982'; // make birthday uppercase?
+const BIRTHDAY = "18.04.1982"; // make birthday uppercase?
 const AGE = someCode(BIRTHDAY); // make age uppercase?"
 ```
 
@@ -68,9 +70,9 @@ What is the output of the script?
 
 ```js
 let name = "Ilya";
-alert( `hello ${1}` ); // ?
-alert( `hello ${"name"}` ); // ?
-alert( `hello ${name}` ); // ?
+alert(`hello ${1}`); // ?
+alert(`hello ${"name"}`); // ?
+alert(`hello ${name}`); // ?
 ```
 
 My answers:
@@ -79,7 +81,7 @@ My answers:
 2. After closing alert box 1, an alert box comes up then shows 'hello name' (because "name" is a string)
 3. After closing alert box 2, an alert box comes up then shows 'hello Ilya'
 
-#  Operators
+# Operators
 
 External Link: https://javascript.info/operators#tasks
 
@@ -88,7 +90,8 @@ External Link: https://javascript.info/operators#tasks
 What are the final values of all variables a, b, c and d after the code below?
 
 ```js
-let a = 1, b = 1;
+let a = 1,
+  b = 1;
 
 let c = ++a; // ?
 let d = b++; // ?
@@ -109,10 +112,10 @@ let a = 2;
 let x = 1 + (a *= 2);
 ```
 
-My answers: 
+My answers:
 
-* a == 4 because it was assigned during `a *= 2` which is the same as `a = a * 2`
-* x == 5 because the result of a(4) was added to 1.
+- a == 4 because it was assigned during `a *= 2` which is the same as `a = a * 2`
+- x == 5 because the result of a(4) was added to 1.
 
 # Type conversions
 
@@ -121,31 +124,30 @@ My answers:
 My answers are added as comments in the code.
 
 ```js
-
 // String concatentation, left to right
-"" + 1 + 0 // "" becomes "1" then "10"
-"$" + 4 + 5 // "$" becomes "$4" then "$45"
-4 + 5 + "px" // "9px", 9 gets concatenated to "px"
+"" + 1 + 0; // "" becomes "1" then "10"
+"$" + 4 + 5; // "$" becomes "$4" then "$45"
+4 + 5 + "px"; // "9px", 9 gets concatenated to "px"
 
 // Math - types are converted to numbers.
 
 // Strings
-6 / "3" // 2
-"2" * "3" // 6
-"4" - 2 // 2
-"  -9  " + 5 // -4, whitespace is removed
-"  -9  " - 5 // -14, whitespace is removed
-" \t \n" - 2 // -2, whitespace/tabs/newlines are removed
+6 / "3"; // 2
+"2" * "3"; // 6
+"4" - 2; // 2
+"  -9  " + 5; // -4, whitespace is removed
+"  -9  " - 5; // -14, whitespace is removed
+" \t \n" - 2; // -2, whitespace/tabs/newlines are removed
 
-"" - 1 + 0 // -1, no concat with a subtraction operator (only works with +)
-"4px" - 2 //  NaN, 'px' cannot be converted to a number for the operation
+"" - 1 + 0; // -1, no concat with a subtraction operator (only works with +)
+"4px" - 2; //  NaN, 'px' cannot be converted to a number for the operation
 
 // Boolean
-true + false // 1 + 0 = 1
-null + 1 // 0 + 1 = 1
+true + false; // 1 + 0 = 1
+null + 1; // 0 + 1 = 1
 
 // undefined
-undefined + 1 // NaN, can't convert to a number
+undefined + 1; // NaN, can't convert to a number
 ```
 
 I got one wrong: `"  -9  " + 5 // -4, whitespace is removed`. I forgot that strings get concatenated with +, so the right answer is `"  -9  5"`.
@@ -157,14 +159,14 @@ I got one wrong: `"  -9  " + 5 // -4, whitespace is removed`. I forgot that stri
 > ```js
 > let a = prompt("First number?", 1);
 > let b = prompt("Second number?", 2);
-> 
+>
 > alert(a + b); // 12
 > ```
 
 My answers:
 
-* This is a question about type conversion, it's '12' because of string concatenation.
-* To fix this, we can use the unary+ and rewrite the 4th line to `alert(+a + +b);`
+- This is a question about type conversion, it's '12' because of string concatenation.
+- To fix this, we can use the unary+ and rewrite the 4th line to `alert(+a + +b);`
 
 # Comparisons
 
@@ -173,13 +175,13 @@ My answers:
 My answers are added as comments in the code.
 
 ```js
-5 > 4 // true
-"apple" > "pineapple" // false since 'p' is greater than 'a'
-"2" > "12" // false (same as 2 > 12)
-undefined == null // true, special 'sweet-couple' rule
-undefined === null // false, strict equality check
-null == "\n0\n" // false, == for null/undefined does not come with type conversion
-null === +"\n0\n" // false, strict equality check
+5 > 4; // true
+"apple" > "pineapple"; // false since 'p' is greater than 'a'
+"2" > "12"; // false (same as 2 > 12)
+undefined == null; // true, special 'sweet-couple' rule
+undefined === null; // false, strict equality check
+null == "\n0\n"; // false, == for null/undefined does not come with type conversion
+null === +"\n0\n"; // false, strict equality check
 ```
 
 I got one wrong: `"2" > "12" // false (same as 2 > 12)`. The answer is true because it's string comparison.
@@ -190,9 +192,9 @@ I got one wrong: `"2" > "12" // false (same as 2 > 12)`. The answer is true beca
 
 > Will alert be shown?
 >
-> ```js 
+> ```js
 > if ("0") {
->  alert( 'Hello' );
+>   alert("Hello");
 > }
 > ```
 
@@ -208,28 +210,30 @@ An alert with "Hello' will be shown, "0" will evaluate to true since it is not a
 
 > Using if..else, write the code which gets a number via prompt and then shows in alert:
 >
->* 1, if the value is greater than zero,
->* -1, if less than zero,
->* 0, if equals zero.
+> - 1, if the value is greater than zero,
+> - -1, if less than zero,
+> - 0, if equals zero.
 >
 > In this task we assume that the input is always a number.
 
 **Rewrite 'if' into '?'**
 
 > Rewrite this if using the conditional operator '?':
+>
 > ```js
 > let result;
 >
 > if (a + b < 4) {
->   result = 'Below';
+>   result = "Below";
 > } else {
->   result = 'Over';
+>   result = "Over";
 > }
+> ```
 
 My answer:
 
 ```js
-let result = (a + b < 4) ? 'Below' : 'Over';
+let result = a + b < 4 ? "Below" : "Over";
 ```
 
 **Rewrite 'if..else' into '?'**
@@ -239,24 +243,28 @@ let result = (a + b < 4) ? 'Below' : 'Over';
 > ```js
 > let message;
 >
-> if (login == 'Employee') {
->   message = 'Hello';
-> } else if (login == 'Director') {
->   message = 'Greetings';
-> } else if (login == '') {
->   message = 'No login';
+> if (login == "Employee") {
+>   message = "Hello";
+> } else if (login == "Director") {
+>   message = "Greetings";
+> } else if (login == "") {
+>   message = "No login";
 > } else {
->   message = '';
+>   message = "";
 > }
 > ```
 
 My answer:
 
 ```js
-let message = (login == 'Employee') ? 'Hello' :
-    (login == 'Director') ? 'Greetings' :
-    (login == '') ? 'No login' :
-    ''
+let message =
+  login == "Employee"
+    ? "Hello"
+    : login == "Director"
+    ? "Greetings"
+    : login == ""
+    ? "No login"
+    : "";
 ```
 
 # Logical operators
@@ -308,7 +316,7 @@ My answer:
 2. `alert(1)` runs and shows '1' in an alert box.
 3. `alert(1)` evaluates to false, because it returns `None(undefined)` according to MDN web docs.
 4. Point 3 applies, this means the alert will finally show 'undefined' as the message.
-5. `alert(2)` is skipped (short-circuit evaluation). 
+5. `alert(2)` is skipped (short-circuit evaluation).
 
 **What is the result of OR AND OR?**
 
@@ -325,32 +333,32 @@ My answer:
 **Check the range between**
 
 > Write an if condition to check that age is between 14 and 90 inclusively.
-> 
+>
 > “Inclusively” means that age can reach the edges 14 or 90.
 
 ```js
-if(age >= 14 && age <= 90){
-    // do something
+if (age >= 14 && age <= 90) {
+  // do something
 }
 ```
 
 **Check the range outside**
 
 > Write an if condition to check that age is NOT between 14 and 90 inclusively.
-> 
+>
 > Create two variants: the first one using NOT !, the second one – without it.
 
 ```js
 let age; // Assign age somewhere down the line
 
 // Variant 1
-if(!(age >= 14 && age <= 90)){
-    // do something
+if (!(age >= 14 && age <= 90)) {
+  // do something
 }
 
 // Variant 2
-if(age < 14 && age > 90){
-    // do something
+if (age < 14 && age > 90) {
+  // do something
 }
 ```
 
@@ -359,30 +367,31 @@ I almost got variant 2 correct but I should've used the OR like this `age < 14 |
 **A question about "if"**
 
 > Which of these alerts are going to execute?
-> 
+>
 > What will the results of the expressions be inside if(...)?
+>
 > ```js
-> if (-1 || 0) alert( 'first' );
-> if (-1 && 0) alert( 'second' );
-> if (null || -1 && 1) alert( 'third' );
+> if (-1 || 0) alert("first");
+> if (-1 && 0) alert("second");
+> if (null || (-1 && 1)) alert("third");
 > ```
 
 Expression 1 will run:
 
-* The 'if' part is `-1 || 0 = -1`
-* -1 is truthy and this is returned.
-* A box appears with the message 'first'.
+- The 'if' part is `-1 || 0 = -1`
+- -1 is truthy and this is returned.
+- A box appears with the message 'first'.
 
 Expression 2 will not run:
 
-* The 'if' part is `-1 && 0 = 0`
-* 0 is falsy and this is returned.
+- The 'if' part is `-1 && 0 = 0`
+- 0 is falsy and this is returned.
 
 Expression 3 will run:
 
-* The 'if' part is `-1 && 1 = 1` then `null || 1 = 1`.
-* 1 is truthy and this is returned.
-* A box appears with the message 'third'.
+- The 'if' part is `-1 && 1 = 1` then `null || 1 = 1`.
+- 1 is truthy and this is returned.
+- A box appears with the message 'third'.
 
 **Check the login** [(see my code)](https://github.com/p2635/modern-js-tutorial/blob/dbd9b3d7a978bb2c81f6439a0e5bfd86cf786051/part1/fundamentals/script.js#L60)
 
@@ -392,9 +401,9 @@ Expression 3 will run:
 >
 > The password is checked as follows:
 >
-> * If it equals “TheMaster”, then show “Welcome!”,
-> * Another string – show “Wrong password”,
-> * For an empty string or cancelled input, show “Canceled”
+> - If it equals “TheMaster”, then show “Welcome!”,
+> - Another string – show “Wrong password”,
+> - For an empty string or cancelled input, show “Canceled”
 
 The schema:
 
@@ -405,44 +414,46 @@ The schema:
 **Last loop value**
 
 > What is the last value alerted by this code? Why?
+>
 > ```js
 > let i = 3;
 >
 > while (i) {
->   alert( i-- );
+>   alert(i--);
 > }
+> ```
 
 My answer: The last value alerted by this code is 1. The while loop ends when i becomes 0 (falsy).
 
 **Which values does the while loop show?**
 
 > For every loop iteration, write down which value it outputs and then compare it with the solution.
-> 
+>
 > Both loops alert the same values, or not?
 >
 > ```js
 > // The prefix form ++i:
 > let i = 0;
-> while (++i < 5) alert( i );
+> while (++i < 5) alert(i);
 >
 > // The postfix form i++
 > let i = 0;
-> while (i++ < 5) alert( i );
+> while (i++ < 5) alert(i);
 > ```
 
 prefix form (recap: returns the value after the operation):
 
-* i increments to 1 so the expression evaluates `(1 < 5)`. 1 gets alerted.
-* This repeats until i gets incremented to 5 (`5 < 5` terminates the loop).
-* The output is 1, 2, 3, 4.
+- i increments to 1 so the expression evaluates `(1 < 5)`. 1 gets alerted.
+- This repeats until i gets incremented to 5 (`5 < 5` terminates the loop).
+- The output is 1, 2, 3, 4.
 
 postfix form (recap: returns the value before the operation).
 
-* i increments to 1 but the expression still evaluates `(0 < 5)` since it's postfix.
-* 1 gets alerted because it's separate to the comparison statement.
-* This repeats until `i = 5` where `5 < 5` terminates the loop.
-* The output is 1, 2, 3, 4, 5. The postfix form gets one more loop than prefix.
-* Both loops do not alert the same values based on my other points.
+- i increments to 1 but the expression still evaluates `(0 < 5)` since it's postfix.
+- 1 gets alerted because it's separate to the comparison statement.
+- This repeats until `i = 5` where `5 < 5` terminates the loop.
+- The output is 1, 2, 3, 4, 5. The postfix form gets one more loop than prefix.
+- Both loops do not alert the same values based on my other points.
 
 **Which values get shown by the "for" loop?**
 
@@ -452,10 +463,10 @@ postfix form (recap: returns the value before the operation).
 >
 > ```js
 > // The postfix form:
-> for (let i = 0; i < 5; i++) alert( i );
-> 
+> for (let i = 0; i < 5; i++) alert(i);
+>
 > // The prefix form:
-> for (let i = 0; i < 5; ++i) alert( i );
+> for (let i = 0; i < 5; ++i) alert(i);
 > ```
 
 My answer (WRONG): I expect the answer to be the same as the previous question. The only difference is that this uses the for loop format.
@@ -472,33 +483,34 @@ Correction: I failed to spot that the comparison statement is separate from the 
 >
 > ```js
 > for (let i = 0; i < 3; i++) {
->  alert( `number ${i}!` );
+>   alert(`number ${i}!`);
 > }
+> ```
 
 **Repeat until the input is correct** [(see my code)](https://github.com/p2635/modern-js-tutorial/blob/616cf2411e299a5c3b3b8a61674e8745c250c7d0/part1/fundamentals/script.js#L132)
 
 > Write a loop which prompts for a number greater than 100. If the visitor enters another number – ask them to input again.
 >
 > The loop must ask for a number until either the visitor enters a number greater than 100 or cancels the input/enters an empty line.
-> 
+>
 > Here we can assume that the visitor only inputs numbers. There’s no need to implement a special handling for a non-numeric input in this task.
 
 I compared my answer `repeatUntilCorrect1()` to the solution on the website. My solution used 'while' and not 'do while' because the task did not instruct me to.
 
-After a few hours, I implemented a do-while loop with `repeatUntilCorrect2()`  without looking at the solution. The solutions are similar but instead of doing `<= 100`, I did `< 101`.
+After a few hours, I implemented a do-while loop with `repeatUntilCorrect2()` without looking at the solution. The solutions are similar but instead of doing `<= 100`, I did `< 101`.
 
 **Output prime numbers** [(see my code)](https://github.com/p2635/modern-js-tutorial/blob/616cf2411e299a5c3b3b8a61674e8745c250c7d0/part1/fundamentals/script.js#L141)
 
 > An integer number greater than 1 is called a prime if it cannot be divided without a remainder by anything except 1 and itself.
-> 
+>
 > In other words, `n > 1` is a prime if it can’t be evenly divided by anything except 1 and n.
-> 
+>
 > For example, 5 is a prime, because it cannot be divided without a remainder by 2, 3 and 4.
-> 
+>
 > Write the code which outputs prime numbers in the interval from 2 to n.
-> 
+>
 > For `n = 10` the result will be 2,3,5,7.
-> 
+>
 > P.S. The code should work for any n, not be hard-tuned for any fixed value.
 
 # The 'switch' statement
@@ -509,81 +521,80 @@ After a few hours, I implemented a do-while loop with `repeatUntilCorrect2()`  w
 >
 > ```js
 > switch (browser) {
->   case 'Edge':
->     alert( "You've got the Edge!" );
+>   case "Edge":
+>     alert("You've got the Edge!");
 >     break;
-> 
->   case 'Chrome':
->   case 'Firefox':
->   case 'Safari':
->   case 'Opera':
->     alert( 'Okay we support these browsers too' );
+>
+>   case "Chrome":
+>   case "Firefox":
+>   case "Safari":
+>   case "Opera":
+>     alert("Okay we support these browsers too");
 >     break;
-> 
+>
 >   default:
->     alert( 'We hope that this page looks ok!' );
-> }
->```
-
-My answer:
-
-```js
-if (browser === 'Edge'){
-    alert( "You've got the Edge!" );
-} else if (browser === 'Chrome' ||
-    browser === 'Firefox' ||
-    browser === 'Safari' ||
-    browser === 'Opera'
-    ){
-        alert( 'Okay we support these browsers too' );
-} else {
-    alert( 'We hope that this page looks ok!' );
-}
-```
-
-**Rewrite the "switch" into an "if"**
-
-> Rewrite the code below using a single switch statement:
-> 
-> ```js
-> let a = +prompt('a?', '');
-> 
-> if (a == 0) {
->   alert( 0 );
-> }
-> if (a == 1) {
->   alert( 1 );
-> }
-> 
-> if (a == 2 || a == 3) {
->   alert( '2,3' );
+>     alert("We hope that this page looks ok!");
 > }
 > ```
 
 My answer:
 
 ```js
-let a = prompt('a?');
+if (browser === "Edge") {
+  alert("You've got the Edge!");
+} else if (
+  browser === "Chrome" ||
+  browser === "Firefox" ||
+  browser === "Safari" ||
+  browser === "Opera"
+) {
+  alert("Okay we support these browsers too");
+} else {
+  alert("We hope that this page looks ok!");
+}
+```
+
+**Rewrite the "switch" into an "if"**
+
+> Rewrite the code below using a single switch statement:
+>
+> ```js
+> let a = +prompt("a?", "");
+>
+> if (a == 0) {
+>   alert(0);
+> }
+> if (a == 1) {
+>   alert(1);
+> }
+>
+> if (a == 2 || a == 3) {
+>   alert("2,3");
+> }
+> ```
+
+My answer:
+
+```js
+let a = prompt("a?");
 
 switch (+a) {
-    
-    case 0:
-        alert(0);
-        break;
+  case 0:
+    alert(0);
+    break;
 
-    case 1:
-        alert(1);
-        break;
+  case 1:
+    alert(1);
+    break;
 
-    case 2:
-    case 3:
-        alert('2,3');
-        break;
+  case 2:
+  case 3:
+    alert("2,3");
+    break;
 
-    default:
-        // nothing happens here
+  default:
+  // nothing happens here
 }
-
 ```
 
 # Functions
@@ -591,28 +602,32 @@ switch (+a) {
 **Is "else" required?**
 
 > The following function returns true if the parameter age is greater than 18.
-> 
+>
 > Otherwise it asks for a confirmation and returns its result:
+>
 > ```js
 > function checkAge(age) {
 >   if (age > 18) {
 >     return true;
 >   } else {
 >     // ...
->     return confirm('Did parents allow you?');
+>     return confirm("Did parents allow you?");
 >   }
 > }
 > ```
+>
 > Will the function work differently if else is removed?
+>
 > ```js
 > function checkAge(age) {
 >   if (age > 18) {
 >     return true;
 >   }
 >   // ...
->   return confirm('Did parents allow you?');
+>   return confirm("Did parents allow you?");
 > }
 > ```
+>
 > Is there any difference in the behavior of these two variants?
 
 My answer: I think it works the same, the `return` keyword terminates the function in either case. The function shows `confirm` as long as `if` evaluates to false, whether you have an `else` clause or not. I still prefer the first function because it's easier to read.
@@ -620,68 +635,70 @@ My answer: I think it works the same, the `return` keyword terminates the functi
 **Rewrite the function using '?' or '||'**
 
 > The following function returns true if the parameter age is greater than 18.
-> 
+>
 > Otherwise it asks for a confirmation and returns its result.
+>
 > ```js
 > function checkAge(age) {
 >   if (age > 18) {
 >     return true;
 >   } else {
->     return confirm('Did parents allow you?');
+>     return confirm("Did parents allow you?");
 >   }
 > }
 > ```
+>
 > Rewrite it, to perform the same, but without if, in a single line.
-> 
+>
 > Make two variants of checkAge:
-> 
-> * Using a question mark operator ?
-> * Using OR ||
-> 
+>
+> - Using a question mark operator ?
+> - Using OR ||
 
 ```js
 // Variant 1
 function checkAge(age) {
-    return (age > 18) ? true : confirm('Did parents allow you?');
+  return age > 18 ? true : confirm("Did parents allow you?");
 }
 
 // Variant 2
 function checkAge(age) {
-    return (age > 18) || confirm('Did parents allow you?');
+  return age > 18 || confirm("Did parents allow you?");
 }
 ```
 
 **Function min(a, b)**
 
 > Write a function min(a,b) which returns the least of two numbers a and b.
-> 
+>
 > For instance:
-> 
+>
 > ```js
-> min(2, 5) == 2
-> min(3, -1) == -1
-> min(1, 1) == 1
+> min(2, 5) == 2;
+> min(3, -1) == -1;
+> min(1, 1) == 1;
 > ```
 
 My answer:
 
 ```js
-function min (a, b){
-    return (a < b) ? a : b;    
+function min(a, b) {
+  return a < b ? a : b;
 }
 ```
 
 **Function pow(x,n)**
 
 > Write a function pow(x,n) that returns x in power n. Or, in other words, multiplies x by itself n times and returns the result.
-> 
+>
 > ```js
 > pow(3, 2) = 3 * 3 = 9
 > pow(3, 3) = 3 * 3 * 3 = 27
 > pow(1, 100) = 1 * 1 * ...* 1 = 1
 > ```
+>
 > Create a web-page that prompts for x and n, and then shows the result of pow(x,n).
-> 
+>
 > P.S. In this task the function should support only natural values of n: integers up from 1.
 
 # Arrow functions
@@ -689,16 +706,20 @@ function min (a, b){
 **Rewrite with arrow functions**
 
 > Replace Function Expressions with arrow functions in the code below:
-> 
+>
 > ```js
 > function ask(question, yes, no) {
 >   if (confirm(question)) yes();
 >   else no();
 > }
-> 
+>
 > ask(
 >   "Do you agree?",
->   function() { alert("You agreed."); },
->   function() { alert("You canceled the execution."); }
+>   function () {
+>     alert("You agreed.");
+>   },
+>   function () {
+>     alert("You canceled the execution.");
+>   }
 > );
 > ```
