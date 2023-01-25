@@ -1,16 +1,23 @@
 {
-    "extends": "eslint:recommended",
-    "env": {
-        "browser": true,
-        "node": true,
-        "es6": true
-    },
-    "rules": {
-        "no-console": 0,
-        "indent": 2,
-        /* To turn of linting for unused functions
-        Link reference: stackoverflow.com/questions/45399923
-        */
-        "no-unused-vars": "off"
-    }
+  "extends": ["prettier"],
+  "plugins": ["prettier"],
+  "env": {
+    "browser": true,
+    "node": true,
+    "es6": true
+  },
+  "rules": {
+    "prettier/prettier": ["error"],
+    "no-unused-vars": "off"
+  }
+  // ORIGINAL CONFIG BEFORE I INSTALLED PRETTIER
+  // "extends": "eslint:recommended",
+  // "rules": {
+  //     "no-console": 0,
+  //     "indent": 2,
+  //     /* To turn of linting for unused functions
+  //     Link reference: stackoverflow.com/questions/45399923
+  //     */
+  //     "no-unused-vars": "off"
+  // }
 }
