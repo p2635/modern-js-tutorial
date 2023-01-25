@@ -54,3 +54,49 @@ function isEmpty(object) {
 ```
 
 After looking at the solution, I realized that I don't need to add `if(prop`. The loop only starts if the object has properties.
+
+**Sum object properties**
+
+> We have an object storing salaries of our team:
+>
+> ```js
+> let salaries = {
+>   John: 100,
+>   Ann: 160,
+>   Pete: 130,
+> };
+> ```
+>
+> Write the code to sum all salaries and store in the variable sum. Should be 390 in the example above.
+>
+> If salaries is empty, then the result must be 0.
+
+My answer:
+
+```js
+let sum = 0;
+for (let salary in salaries) {
+  sum += salary;
+}
+return sum;
+```
+
+Problems with my answer:
+
+- The console.log output is 0JohnAnnPete.
+- I iterate through keys instead of the values. I should use the pattern `object[key]`.
+- I notice the keys are converted to strings in the output.
+- The extra '0' in the output was intended for the negative case for empty salaries.
+
+Rewriting the correct answer based on my errors:
+
+```js
+let sum = 0;
+for (let person in salaries) {
+  sum += salaries[person];
+}
+return sum;
+```
+
+- The value of sum is initialised with 0, which covers the criteria "If salaries is empty, then the result must be 0.".
+- For each key in `person`, get the value and add it to sum.
