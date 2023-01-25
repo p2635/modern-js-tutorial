@@ -43,5 +43,21 @@ let ladder = {
   },
 };
 
-// I failed to work out the answer, so I had to read the solution.
-// It appears the object is returned everytime, which allows methods to be chained.
+/* I failed to work out the answer, so I had to read the solution.
+It appears the object is returned everytime, which allows methods to be chained. */
+
+/* Create new Calculator (https://javascript.info/constructor-new#create-new-calculator)
+Date: 25 Jan 2023
+*/
+function Calculator() {
+  this.read = function () {
+    this.a = +prompt("Enter value for 'a'.", 0);
+    this.b = +prompt("Enter value for 'b'.", 0);
+  };
+  this.sum = function () {
+    return this.a + this.b;
+  };
+  this.mul = function () {
+    return this.a * this.b;
+  };
+}

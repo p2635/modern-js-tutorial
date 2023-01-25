@@ -282,3 +282,5 @@ alert(new A() == new B()); // true
 > alert("Sum=" + calculator.sum());
 > alert("Mul=" + calculator.mul());
 > ```
+
+See code in `03-objects.js`.
