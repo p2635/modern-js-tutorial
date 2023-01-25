@@ -69,8 +69,8 @@ Here we learn JavaScript, starting from scratch and go on to advanced concepts l
 - [x] Objects
 - [x] Object references and copying
 - [x] Garbage collection
-- [ ] Object methods, "this"
-- [ ] Constructor, operator "new"
+- [x] Object methods, "this"
+- [x] Constructor, operator "new"
 - [ ] Optional chaining '?.'
 - [ ] Symbol type
 - [ ] Object to primitive conversion
