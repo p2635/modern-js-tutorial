@@ -172,7 +172,7 @@ TBC.
 
 List of extra topics that assume you've covered the first two parts of tutorial. There is no clear hierarchy here, you can read articles in the order you want.
 
-TBC.
+TBC. I consider this part optional as I'm building foundational JS knowledge.
 
 # My Lessons Learned
 
