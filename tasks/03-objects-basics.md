@@ -2,8 +2,8 @@
 
 <h1>Contents</h1>
 
-- [Coding style](#coding-style)
-- [Automated testing with Mocha](#automated-testing-with-mocha)
+- [Objects](#objects)
+- [Object methods, "this"](#object-methods-this)
 
 # Objects
 
@@ -139,6 +139,8 @@ function multiplyNumeric(obj) {
 }
 ```
 
+# Object methods, "this"
+
 **Using "this" in object literal**
 
 > Here the function makeUser returns an object.
@@ -225,3 +227,40 @@ See code in `03-objects.js`.
 > Such approach is widely used across JavaScript libraries.
 
 See code in `03-objects.js`.
+
+**Constructor, operator "new"**
+
+> Is it possible to create functions A and B so that new A() == new B()?
+>
+> ```js
+> function A() { ... }
+> function B() { ... }
+>
+> let a = new A();
+> let b = new B();
+>
+> alert( a == b ); // true
+> ```
+>
+> If it is, then provide an example of their code.
+
+I don't know where to start with this. Usually you can simply point variable b to a. However, the question asks how to create functions A and B to get the same result. Since `new` always returns a new object, I fail to see how this is possible. a and b will always be different...right?
+
+It turns out I was wrong:
+
+> If return is called with an object, then the object is returned instead of `this`.
+
+Example:
+
+```js
+let obj = {};
+
+function A() {
+  return obj;
+}
+function B() {
+  return obj;
+}
+
+alert(new A() == new B()); // true
+```
