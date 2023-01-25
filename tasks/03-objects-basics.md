@@ -100,3 +100,41 @@ return sum;
 
 - The value of sum is initialised with 0, which covers the criteria "If salaries is empty, then the result must be 0.".
 - For each key in `person`, get the value and add it to sum.
+
+**Multiply numeric property values by 2**
+
+> Create a function multiplyNumeric(obj) that multiplies all numeric property values of obj by 2.
+>
+> For instance:
+>
+> ```js
+> // before the call
+> let menu = {
+>   width: 200,
+>   height: 300,
+>   title: "My menu",
+> };
+>
+> multiplyNumeric(menu);
+>
+> // after the call
+> menu = {
+>   width: 400,
+>   height: 600,
+>   title: "My menu",
+> };
+> ```
+>
+> Please note that multiplyNumeric does not need to return anything. It should modify the object in-place.
+>
+> P.S. Use typeof to check for a number here.
+
+```js
+function multiplyNumeric(obj) {
+  for (let key in obj) {
+    if (typeof obj[key] == "number") {
+      obj[key] *= 2;
+    }
+  }
+}
+```
