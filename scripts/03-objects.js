@@ -27,7 +27,7 @@ let calculator = {
 /* Chain commands Task (https://javascript.info/object-methods#tasks)
 Date: 25 Jan 2023
 I failed to work out the answer, so I had to read the solution.
-It appears the object is returned everytime, which allows methods
+It appears the object is returned every time, which allows methods
 to be chained.
 */
 let ladder = {

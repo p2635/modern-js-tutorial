@@ -72,7 +72,7 @@ Here we learn JavaScript, starting from scratch and go on to advanced concepts l
 - [x] Object methods, "this"
 - [x] Constructor, operator "new"
 - [x] Optional chaining '?.'
-- [ ] Symbol type
+- [x] Symbol type
 - [ ] Object to primitive conversion
 
 **Data types**
