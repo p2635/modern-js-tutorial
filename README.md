@@ -73,7 +73,7 @@ Here we learn JavaScript, starting from scratch and go on to advanced concepts l
 - [x] Constructor, operator "new"
 - [x] Optional chaining '?.'
 - [x] Symbol type
-- [ ] Object to primitive conversion
+- [ ] Object to primitive conversion - (SKIPPED) Too much detail I don't need to know right now. I can come back to this if I run into problems with using objects.
 
 **Data types**
 
